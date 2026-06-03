@@ -40,6 +40,10 @@ A `PreToolUse` hook layer that blocks classes of mistakes structurally:
 destructive commands, secrets printed to stdout, `/proc/<pid>/environ` dumps,
 em-dashes/emojis in public output, and runaway index-file growth.
 
+### 5. Claude + n8n pairing (`docs/n8n-integration.md`)
+Claude designs and debugs; n8n executes and schedules. An MCP-first workflow plus
+13 hard-won gotchas (Symptom -> Cause -> Fix) from running n8n in production.
+
 ### Bonus: trusted-boundary credential model (`rules/trusted-boundary-policy.md`)
 A 4-level model for where secrets are allowed to exist - the philosophy behind the
 hook layer, not just the code.
@@ -55,7 +59,7 @@ hook layer, not just the code.
 | `rules/` | 6 best-practice rule files (coding-style, self-healing, memory-management, pro-tier, trusted-boundary, mandatory-bug-expert / TRIO) |
 | `commands/` | 2 slash commands (ultra-think, release-notes) |
 | `memory-system/` | The memory architecture + a blank index template |
-| `docs/` | Deep-dive writeups |
+| `docs/` | Deep-dive writeups: [TRIO review](docs/trio-review.md), [n8n integration](docs/n8n-integration.md) |
 
 ---
 
