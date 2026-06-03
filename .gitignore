@@ -1,0 +1,22 @@
+# Never commit secrets or private state
+.env
+.env.*
+*.key
+*.pem
+secrets/
+state/
+
+# Never commit a real memory dir (only the template under memory-system/ is public)
+memory/
+**/MEMORY.md
+!memory-system/MEMORY.template.md
+
+# Backups and editor cruft
+*.bak
+*.bak-*
+*~
+.DS_Store
+
+# Logs and telemetry
+*.log
+*.jsonl
